@@ -13,6 +13,11 @@ printResult(addEm(5, 2));
 
 let combineValues: (a: number, b: number) => number;
 
+// alternative
+// type addFn = (n1: number, n2: number) => number;
+// let combineValues: addFn;
+// combineValues = (a: number, b: number) => a + b;
+
 combineValues = addEm;
 // combineValues = printResult;
 
