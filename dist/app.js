@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 const e1 = {
     name: " Yann",
     privileges: ["crete-server"],
@@ -68,4 +69,14 @@ function add3(a, b) {
 }
 const result3 = add3(2, 3);
 const result2 = add2(3, 3);
+const fetchUserData = {
+    id: "u1",
+    name: "yann",
+    job: { title: "CEO", description: "My company" },
+};
+console.log(fetchUserData.job && fetchUserData.job.title, "js");
+console.log((_a = fetchUserData === null || fetchUserData === void 0 ? void 0 : fetchUserData.job) === null || _a === void 0 ? void 0 : _a.title, "ts");
+let userInp = null || undefined;
+let storeData = userInp !== null && userInp !== void 0 ? userInp : "DEFAULT TS";
+console.log(storeData);
 //# sourceMappingURL=app.js.map

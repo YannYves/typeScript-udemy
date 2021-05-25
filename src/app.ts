@@ -140,3 +140,27 @@ function add3(a: Combinable, b: Combinable) {
 const result3 = add3(2, 3);
 // unlike below
 const result2 = add2(3, 3);
+
+// optional chaining
+const fetchUserData = {
+  id: "u1",
+  name: "yann",
+  job: { title: "CEO", description: "My company" },
+};
+
+// to make sure the job property exist you can do as below in js
+console.log(fetchUserData.job && fetchUserData.job.title, "js");
+
+// in ts , you can do as below
+console.log(fetchUserData?.job?.title, "ts");
+
+//null coalescing
+// when you don't know wether a property is gonna be null of defined, a valid piece of data
+let userInp = null || undefined;
+// js
+// let storeData  = userInp || "DEFAULT";
+
+// however if you actually want to check wether the value if null or undefined (and nothing else) then use the coalescing
+let storeData = userInp ?? "DEFAULT TS";
+
+console.log(storeData);
