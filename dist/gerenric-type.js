@@ -11,4 +11,4 @@ const promise = new Promise((resole, reject) => {
 promise
     .then((data) => console.log(data.toUpperCase()))
     .catch((error) => console.log(error));
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=gerenric-type.js.map
