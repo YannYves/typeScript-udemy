@@ -1,14 +1,6 @@
 "use strict";
-const names = ["yann", "tony"];
-const promise = new Promise((resole, reject) => {
-    setTimeout(() => {
-        resole("This is done");
-    }, 2000);
-    if (false) {
-        reject("error");
-    }
-});
-promise
-    .then((data) => console.log(data.toUpperCase()))
-    .catch((error) => console.log(error));
+function merge(objA, objB) {
+    return Object.assign(Object.assign({}, objA), objB);
+}
+console.log(merge({ a: 1, b: 2 }, { c: 3, d: 4 }));
 //# sourceMappingURL=app.js.map
