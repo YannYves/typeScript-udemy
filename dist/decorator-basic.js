@@ -90,4 +90,4 @@ __decorate([
     Log3,
     __param(0, Log4)
 ], Product.prototype, "getPriceWithTax", null);
-//# sourceMappingURL=app.js.map
+//# sourceMappingURL=decorator-basic.js.map
